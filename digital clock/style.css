@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(34, 190, 211, 0.63);
+}
+
+#clock{
+    font-size: 50px;
+    color: green;
+}
+
+.prebox{
+    border: 10px solid rgba(0, 128, 0, 0.589);
+    box-shadow: 5px 10px #2cac42bd;
+}
