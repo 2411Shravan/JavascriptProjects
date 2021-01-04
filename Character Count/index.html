@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="main">
+                Character count
+            </div>
+            <div class="after">
+                <textarea class="text-area" placeholder="start typing" onkeyup="countCharacter()">
+
+                </textarea>
+                <p>Total Characters : <span class="count" id="ref"> 0</span></p><br>
+                <p class="fer" id="fer"></p>
+            </div>
+        </form>
+    </div>
+<style>
+    .main{
+        font-size: 70px;
+        color: darkkhaki;
+    }
+    p{
+        font-size: 30px;
+        color: rgb(230, 228, 200);
+    }
+    body{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: rgba(9, 9, 14, 0.938);
+    }
+
+    .container{
+       padding-top: 20px;
+    }
+    .container textarea{
+        resize: none;
+        height:340px;
+        width:550px;
+        word-wrap: break-word;
+    }
+</style>
+
+<script src="./app.js"></script>
+</body>
+</html>
