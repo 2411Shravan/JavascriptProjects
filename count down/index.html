@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" onload="start">
+        <div id="day"><p></p></div><div class="hehe">Days</div>
+        <div id="hour" text-align="center"><p></p></div><div class="hehe">Hour(s)</div>
+        <div id="minute" text-align="center"><p></p></div><div class="hehe">Minute(s)</div>
+        <div id="second" text-align="center"><p></p></div><div class="hehe">Second(s)</div>
+    </div>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgba(38, 46, 46, 0.664);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        p{
+            word-spacing: 50px;
+        }
+
+        #day{
+            padding-right: 25px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            border-radius: 8px;
+        }
+        #hour{
+            padding-right: 20px;
+            background-color: rgb(204, 61, 61);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #minute{
+            padding-right: 20px;
+            background-color: rgba(0, 0, 255, 0.664);
+            border-radius: 8px;
+            text-align: center;
+        }
+        #second{
+            background-color: aliceblue;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #container{
+            padding-top: 150px;
+            font-size: 50px;
+            align-items: center;
+            justify-content: center;
+           
+            word-spacing: 50;
+        }
+    </style>
+    <script src="./app.js"></script>
+</body>
+</html>
