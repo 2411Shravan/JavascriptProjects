@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="reply" id="reply"><h2  id="phantom">Quiz</h2>
+        <div class="qts" id="question"><h2 >Question Text</h2></div>
+        
+        <ul>
+            <li><input type="radio" id="a" class="answer" name="answer"><label id="atext" for="a">Question</label></li>
+            <li><input type="radio" id="b" class="answer" name="answer"><label id="btext" for="b">Question</label></li>
+            <li><input type="radio"  id="c" class="answer" name="answer"><label id="ctext" for="c">Question</label></li>
+            <li><input type="radio" id="d" class="answer" name="answer"><label id="dtext" for="d">Question</label></li>
+        </ul>
+        <button class="submit" onclick="changeQuestion()">Submit</button>
+    </div>
+</div>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #EECDA3;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            min-height: 100vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            }
+        .main-container {
+            background-color: rgba(238, 231, 231, 0.842);
+            border-radius: 10px;
+            width: 50%;
+            font-size:25px;
+            
+        }
+        
+        .qts{
+            
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin-left:20px
+            
+        }
+        #phantom{
+            text-align:center;
+        }
+        ul li{
+            margin: 1rem 0;
+        }
+        button{
+            background: #000000;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: block;
+            width: 100%;
+            color: white;
+            padding:26px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size:20px;
+            border:none;
+            overflow: hidden;
+        }
+        button:hover {
+            background: #0e5bcf;  /* fallback for old browsers */
+            
+        }
+    </style>
+    
+</body>
+</html>
